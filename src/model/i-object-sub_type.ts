@@ -1,19 +1,19 @@
-import { IObjectType } from "./i-object-type";
+import {IObjectType} from './i-object-type';
 
 export interface IObjectSubType {
-    name?: string;
+  name?: string;
 
-    index?: number;
+  index?: number;
 
-    min?: number;
+  min?: number;
 
-    max?: number;
+  max?: number;
 
-    exclusions?: string[];
+  exclusions?: string[];
 
-    mandatories?: string[];
+  mandatories?: string[];
 
-    subObjectTypeId: string
-    
-    subObjectTypeUri?: string
+  subObjectTypeId: string;
+
+  subObjectTypeUri?: string;
 }
