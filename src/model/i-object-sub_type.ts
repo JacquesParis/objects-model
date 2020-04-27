@@ -1,7 +1,7 @@
-import {IDataEntity} from './i-data-entity';
 import {IObjectType} from './i-object-type';
+import {IRestEntity} from './i-rest-entity';
 
-export interface IObjectSubType extends IDataEntity {
+export interface IObjectSubType extends IRestEntity {
   name?: string;
 
   index?: number;
