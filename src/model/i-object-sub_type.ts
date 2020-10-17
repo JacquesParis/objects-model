@@ -19,4 +19,11 @@ export interface IObjectSubType extends IRestEntity {
   subObjectTypeUri?: string;
 
   objectType?: IObjectType;
+
+  owner?: boolean;
+
+  acl?: boolean;
+
+  tree?: boolean;
+  namespace?: boolean;
 }
