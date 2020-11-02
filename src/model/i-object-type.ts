@@ -5,5 +5,6 @@ export interface IObjectType extends IRestEntity {
   name: string;
   contentType: string;
   definition: any;
+  contentDefinition?: any;
   objectSubTypes: IObjectSubType[];
 }
