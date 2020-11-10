@@ -5,3 +5,5 @@ export * from './i-object-sub_type';
 export * from './i-object-node';
 export * from './i-object-tree';
 export * from './i-json-shema';
+export * from './i-error';
+export * from './i-app-user';
