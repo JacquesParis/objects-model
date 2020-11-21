@@ -12,6 +12,7 @@ export enum ApplicationErrors {
   INCOMBATIBLE = 'INCOMBATIBLE',
   MISSING_PARAMETER = 'MISSING_PARAMETER',
   UNAUTHORIZED_VALUE = 'UNAUTHORIZED_VALUE',
+  NOT_IMPLEMENTED = 'NOT_IMPLEMENTED',
 }
 
 export const APPLICATION_ERRORS: {
@@ -54,6 +55,7 @@ export const APPLICATION_ERRORS: {
   [ApplicationErrors.MISSING_PARAMETER]: {errorCode: ApplicationErrors.MISSING_PARAMETER, statusCode: 400},
   [ApplicationErrors.UNAUTHORIZED_VALUE]: {errorCode: ApplicationErrors.UNAUTHORIZED_VALUE, statusCode: 424},
   [ApplicationErrors.FORBIDEN]: {errorCode: ApplicationErrors.FORBIDEN, statusCode: 403},
+  [ApplicationErrors.NOT_IMPLEMENTED]: {errorCode: ApplicationErrors.NOT_IMPLEMENTED, statusCode: 501},
 };
 export interface IObjectError {
   statusCode: number;
