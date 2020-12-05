@@ -13,7 +13,7 @@ export interface IAclCtx {
 export interface IRestEntity extends IDataEntity {
   uri?: string;
   entityCtx?: {
-    entityDefinition?: IJsonSchema;
+    jsonSchema?: IJsonSchema;
     aclCtx?: IAclCtx;
     loaded?: boolean;
     actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]};
