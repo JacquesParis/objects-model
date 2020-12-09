@@ -10,13 +10,19 @@ export interface IAccessRightCRUD {
 export interface IAclCtx {
   rights: IAccessRightCRUD;
 }
+
+export interface IEntityContext {
+  entityType: 'objectTree' | 'objectNode' | 'objectType' | 'objectSubType' | string;
+  jsonSchema?: IJsonSchema;
+  aclCtx?: IAclCtx;
+  loaded?: boolean;
+  actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]};
+  implementedTypes?: string[];
+}
 export interface IRestEntity extends IDataEntity {
   uri?: string;
-  entityCtx?: {
-    jsonSchema?: IJsonSchema;
-    aclCtx?: IAclCtx;
-    loaded?: boolean;
-    actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]};
-  };
+  aliasUri?: string;
+  entityCtx?: IEntityContext;
   entityDefinition?: IJsonSchema;
+  [key: string]: any;
 }
