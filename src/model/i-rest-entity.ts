@@ -11,12 +11,18 @@ export interface IAclCtx {
   rights: IAccessRightCRUD;
 }
 
+export interface IEntityMethod {
+  methodName: string;
+  methodId: string;
+  parameters: IJsonSchema;
+  actionName: string;
+}
 export interface IEntityContext {
   entityType: 'objectTree' | 'objectNode' | 'objectType' | 'objectSubType' | string;
   jsonSchema?: IJsonSchema;
   aclCtx?: IAclCtx;
   loaded?: boolean;
-  actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]};
+  actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]; methods?: IEntityMethod[]};
   implementedTypes?: string[];
 }
 export interface IRestEntity extends IDataEntity {
