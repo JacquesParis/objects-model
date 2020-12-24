@@ -1,14 +1,14 @@
 import {IDataEntity} from './i-data-entity';
 import {IJsonSchema} from './i-json-shema';
 
-export interface IAccessRightCRUD {
+export interface IAccessRightsCRUD {
   delete: boolean;
   create: boolean;
   read: boolean;
   update: boolean;
 }
 export interface IAclCtx {
-  rights: IAccessRightCRUD;
+  rights: IAccessRightsCRUD;
 }
 
 export interface IEntityMethod {
