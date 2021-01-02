@@ -1,6 +1,6 @@
 {
   "name": "@jacquesparis/objects-model",
-  "version": "0.0.1-SNAPSHOT.2",
+  "version": "1.0.4",
   "description": "model class share between client and server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -10,7 +10,7 @@
     "lint": "tslint -p tsconfig.json",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "lib": "npm run build && git add -A && git commit -m \"lib\" && git push origin HEAD && npm publish --access=public"
+    "lib": "npm run build && git add -A && git commit --amend -m \"lib\" && git push -f origin HEAD && npm publish --access=public"
   },
   "author": "JacquesParis",
   "license": "MIT",
