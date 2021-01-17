@@ -10,7 +10,7 @@
     "lint": "tslint -p tsconfig.json",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "lib": "npm run build && git add -A && git commit -m \"lib\" && npm publish --access=public"
+    "lib": "npm run build && git add -A && git commit -m \"lib\" && git push origin HEAD && npm publish --access=public"
   },
   "author": "JacquesParis",
   "license": "MIT",
