@@ -25,6 +25,7 @@ export interface IEntityContext {
   preview?: {
     template?: string;
     icon?: string;
+    html?: string;
   };
   actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]; methods?: IEntityMethod[]};
   implementedTypes?: string[];
