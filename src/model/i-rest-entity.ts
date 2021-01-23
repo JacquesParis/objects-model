@@ -23,7 +23,6 @@ export interface IEntityContext {
   aclCtx?: IAclCtx;
   loaded?: boolean;
   preview?: {
-    template?: string;
     icon?: string;
     html?: string;
   };
