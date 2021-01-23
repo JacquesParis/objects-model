@@ -6,6 +6,8 @@ export interface IObjectType extends IRestEntity {
   contentType: string;
   inheritedTypesIds: string[];
   definition: any;
+  templateView?: string;
+  iconView?: string;
   contentDefinition?: any;
   objectSubTypes: IObjectSubType[];
 }

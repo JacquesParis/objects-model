@@ -22,6 +22,10 @@ export interface IEntityContext {
   jsonSchema?: IJsonSchema;
   aclCtx?: IAclCtx;
   loaded?: boolean;
+  preview?: {
+    template?: string;
+    icon?: string;
+  };
   actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]; methods?: IEntityMethod[]};
   implementedTypes?: string[];
 }
