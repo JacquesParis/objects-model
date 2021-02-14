@@ -40,7 +40,7 @@ export interface IEntityContext {
     html?: string;
   };
   actions?: {
-    creations?: {[id: string]: IJsonSchema};
+    creations?: {[id: string]: {schema: IJsonSchema; icon?: string}};
     reads?: string[];
     methods?: IEntityMethod[];
     moveTo?: IMoveToAction[];
