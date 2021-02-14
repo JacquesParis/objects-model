@@ -17,6 +17,19 @@ export interface IEntityMethod {
   parameters: IJsonSchema;
   actionName: string;
 }
+
+export interface IMoveToAction {
+  id: string;
+  uri: string;
+  nodeName: string;
+  nodeType: string;
+  preview:
+    | {
+        icon?: string;
+        html?: string;
+      }
+    | undefined;
+}
 export interface IEntityContext {
   entityType: 'objectTree' | 'objectNode' | 'objectType' | 'objectSubType' | string;
   jsonSchema?: IJsonSchema;
@@ -26,7 +39,12 @@ export interface IEntityContext {
     icon?: string;
     html?: string;
   };
-  actions?: {creations?: {[id: string]: IJsonSchema}; reads?: string[]; methods?: IEntityMethod[]};
+  actions?: {
+    creations?: {[id: string]: IJsonSchema};
+    reads?: string[];
+    methods?: IEntityMethod[];
+    moveTo?: IMoveToAction[];
+  };
   implementedTypes?: string[];
 }
 export interface IRestEntity extends IDataEntity {
