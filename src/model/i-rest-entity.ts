@@ -1,5 +1,5 @@
 import {IDataEntity} from './i-data-entity';
-import {IJsonSchema} from './i-json-shema';
+import {IJsonSchema} from './i-json-schema';
 
 export interface IAccessRightsCRUD {
   delete: boolean;
@@ -16,6 +16,7 @@ export interface IEntityMethod {
   methodId: string;
   parameters: IJsonSchema;
   actionName: string;
+  handlebarsMethodSampling?: string;
 }
 
 export interface IMoveToAction {
