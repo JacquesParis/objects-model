@@ -1,6 +1,6 @@
 {
   "name": "@jacquesparis/objects-model",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "model class share between client and server",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
