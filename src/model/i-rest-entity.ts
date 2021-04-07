@@ -17,6 +17,7 @@ export interface IEntityMethod {
   parameters: IJsonSchema;
   actionName: string;
   handlebarsMethodSampling?: string;
+  icon?: string;
 }
 
 export interface IMoveToAction {
