@@ -4,6 +4,8 @@ import {IRestEntity} from './i-rest-entity';
 export interface IObjectSubType extends IRestEntity {
   name?: string;
 
+  title?: string;
+
   index?: number;
 
   min?: number;

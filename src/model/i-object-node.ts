@@ -2,6 +2,7 @@ import {IObjectType} from './i-object-type';
 import {IRestEntity} from './i-rest-entity';
 export interface IObjectNode extends IRestEntity {
   name: string;
+  title?: string;
   objectType?: IObjectType;
   parentNode?: IObjectNode;
   parentTree?: IObjectNode;

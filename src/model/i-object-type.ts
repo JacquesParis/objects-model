@@ -3,6 +3,7 @@ import {IRestEntity} from './i-rest-entity';
 
 export interface IObjectType extends IRestEntity {
   name: string;
+  title?: string;
   contentType: string;
   inheritedTypesIds: string[];
   definition: any;

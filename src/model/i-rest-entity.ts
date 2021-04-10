@@ -29,20 +29,31 @@ export interface IMoveToAction {
     | {
         icon?: string;
         html?: string;
+        typeTitle?: string;
       }
     | undefined;
 }
+
+export interface ICreationContext {
+  schema: IJsonSchema;
+  icon?: string;
+  typeTitle?: string;
+}
+
+export interface IPreviewContext {
+  icon?: string;
+  html?: string;
+  typeTitle?: string;
+}
+
 export interface IEntityContext {
   entityType: 'objectTree' | 'objectNode' | 'objectType' | 'objectSubType' | string;
   jsonSchema?: IJsonSchema;
   aclCtx?: IAclCtx;
   loaded?: boolean;
-  preview?: {
-    icon?: string;
-    html?: string;
-  };
+  preview?: IPreviewContext;
   actions?: {
-    creations?: {[id: string]: {schema: IJsonSchema; icon?: string}};
+    creations?: {[id: string]: ICreationContext};
     reads?: string[];
     methods?: IEntityMethod[];
     moveTo?: IMoveToAction[];
