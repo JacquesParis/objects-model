@@ -7,3 +7,4 @@ export * from './i-object-tree';
 export * from './i-json-schema';
 export * from './i-error';
 export * from './i-app-user';
+export * from './i-method-result';
