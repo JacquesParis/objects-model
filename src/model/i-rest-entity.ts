@@ -58,7 +58,6 @@ export interface IEntityContext {
     methods?: IEntityMethod[];
     moveTo?: IMoveToAction[];
   };
-  implementedTypes?: string[];
 }
 export interface IRestEntity extends IDataEntity {
   uri?: string;
